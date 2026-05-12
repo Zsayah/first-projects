@@ -13,9 +13,13 @@ def dividir(a, b):
 
 while True:
     print('=== Calculadora ===')
-
-    n1 = float(input(' Digite um Numero:'))
-    n2 = float(input('Digite outro Numero:'))
+    try:
+        n1 = float(input(' Digite um Numero:'))
+        n2 = float(input('Digite outro Numero:'))
+    except:
+        print('Isso Não é um número!')
+        continue
+    
 
     print('Escolha um simbolo dentre as opçoes +, -, /, *')
 
@@ -28,7 +32,7 @@ while True:
         resultado = subtrair(n1, n2)
 
     elif simbolo == '*':
-        resultado = dividir(n1, n2)
+        resultado = multiplicar(n1, n2)
 
     elif simbolo == '/':
         resultado = dividir(n1, n2)
