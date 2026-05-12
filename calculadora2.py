@@ -12,7 +12,7 @@ def dividir(a, b):
 
 
 while True:
-    print('===Calculadora===')
+    print('=== Calculadora ===')
 
     n1 = float(input(' Digite um Numero:'))
     n2 = float(input('Digite outro Numero:'))
